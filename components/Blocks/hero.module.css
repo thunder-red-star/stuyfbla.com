@@ -1,0 +1,19 @@
+.heroContainer {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    height: 100%;
+}
+
+.heroChildren {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}

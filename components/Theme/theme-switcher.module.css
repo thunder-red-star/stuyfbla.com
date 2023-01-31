@@ -1,0 +1,22 @@
+.themeSwitcher {
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.themeSwitcherSwitch {
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.switcherIcon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    top: 0;
+}

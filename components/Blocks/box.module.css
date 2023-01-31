@@ -1,0 +1,38 @@
+.box {
+    --border-width: 10px;
+    --fbla-light-blue: "#1D52BC";
+    --fbla-dark-blue: "#0A2E7F";
+    --fbla-yellow: "#FFA800";
+    --border-style: solid;
+}
+
+.box .boxFront {
+    border-width: var(--border-width);
+    border-style: var(--border-style);
+    background-color: var(--fbla-yellow) !important;
+    z-index: 3;
+    position: relative;
+    padding: 1rem;
+}
+
+.box .boxBehind1 {
+    border-right-width: var(--border-width);
+    border-bottom-width: var(--border-width);
+    border-style: var(--border-style);
+    background-color: var(--fbla-light-blue) !important;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.box .boxBehind2 {
+    border-right-width: var(--border-width);
+    border-bottom-width: var(--border-width);
+    border-style: var(--border-style);
+    background-color: var(--fbla-dark-blue) !important;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
