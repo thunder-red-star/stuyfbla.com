@@ -4,6 +4,7 @@ import styles from './highlighted-text.module.css';
 import {Text, useTheme} from "@nextui-org/react";
 
 function getTheme () {
+	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const { theme } = useTheme();
 	return theme;
 }
