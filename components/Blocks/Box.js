@@ -14,7 +14,7 @@ Convert CSS vars to JSON
  */
 
 const COLORS = {
-  fblaLightBlue: "#1D52BC",
+	fblaLightBlue: "#1D52BC",
 	fblaDarkBlue: "#0A2E7F",
 	fblaYellow: "#FFA800",
 }
@@ -62,27 +62,27 @@ export default function Box({children, className, ...props}) {
 				setHovering(false);
 			}}
 		>
-			<animated.div
-				className={styles.boxBehind1}
-				style={{
-					transform: spring1Props.transform,
-					borderColor: COLORS.fblaLightBlue,
-				}}
-			/>
-			<animated.div
-				className={styles.boxBehind2}
-				style={{
-					transform: spring2Props.transform,
-					borderColor: COLORS.fblaDarkBlue,
-				}}
-			/>
-			<div
-				className={styles.boxFront}
-				style={{
-					borderColor: COLORS.fblaYellow,
+			<div className={"h-full"}>
+				<animated.div
+					className={styles.boxBehind1}
+					style={{
+						transform: spring1Props.transform,
+						borderColor: COLORS.fblaLightBlue,
 					}}
-			>
-				{children}
+				/>
+				<animated.div
+					className={styles.boxBehind2}
+					style={{
+						transform: spring2Props.transform,
+						borderColor: COLORS.fblaDarkBlue,
+					}}
+				/>
+				<div className={styles.boxFront}
+						 style={{
+							 borderColor: COLORS.fblaYellow,
+						 }}>
+					{children}
+				</div>
 			</div>
 		</animated.div>
 	);

@@ -3,6 +3,8 @@
 import React from 'react';
 import {animated, useInView, useSpring} from "@react-spring/web";
 import styles from './hero.module.css';
+// Import react children and react child types
+import {ReactChildren, ReactNode} from "react";
 let fadeUp = (inView, index) => {
 	return {
 		from: {
@@ -25,7 +27,7 @@ let fadeUp = (inView, index) => {
 export default function HeroLeft({children, className, ...props}) {
 	// Create springs for each child, because each child will have a different delay
 	let springs;
-	if (typeof children == Array) {
+	if (children.hasOwnProperty("length")) {
 		springs = children.map((child, index) => {
 			// eslint-disable-next-line react-hooks/rules-of-hooks
 			const [ref, inView] = useInView(
@@ -71,7 +73,7 @@ export default function HeroLeft({children, className, ...props}) {
 					className={"basis-1/2 " + styles.heroChildren}
 				>
 					<div>
-						{typeof children === Array && children.map((child, index) => {
+						{children.hasOwnProperty("length") && children.map((child, index) => {
 							return (
 								<
 									animated.div
@@ -85,7 +87,7 @@ export default function HeroLeft({children, className, ...props}) {
 								</animated.div>
 							);
 						})}
-						{typeof children !== Array && (
+						{!children.hasOwnProperty("length") && (
 							<
 								animated.div
 								ref={springs[0][1]}
