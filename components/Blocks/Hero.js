@@ -50,47 +50,45 @@ export default function Hero({children, className, ...props}) {
 		springs = [[useSpring(fadeUp(inView, 0)), ref]];
 	}
 
-
-// Left hero: text (children) on the left, image on the right
-return (
-	<
-		section
-		className={(className || "") + styles.heroContainer + " w-full"}
-	>
-		<div className={styles.hero + "relative"}>
-			<
-				div
-				className={styles.heroChildren}
-			>
-				<div>
-					{typeof children === Array && children.map((child, index) => {
-						return (
+	return (
+		<
+			section
+			className={(className || "") + styles.heroContainer + " w-full"}
+		>
+			<div className={styles.hero + "relative"}>
+				<
+					div
+					className={styles.heroChildren}
+				>
+					<div>
+						{typeof children === Array && children.map((child, index) => {
+							return (
+								<
+									animated.div
+									ref={springs[index][1]}
+									style={{
+										...springs[index][0]
+									}}
+									key={index}
+								>
+									{child}
+								</animated.div>
+							);
+						})}
+						{typeof children !== Array && (
 							<
 								animated.div
-								ref={springs[index][1]}
+								ref={springs[0][1]}
 								style={{
-									...springs[index][0]
+									...springs[0][0]
 								}}
-								key={index}
 							>
-								{child}
+								{children}
 							</animated.div>
-						);
-					})}
-					{typeof children !== Array && (
-						<
-							animated.div
-							ref={springs[0][1]}
-							style={{
-								...springs[0][0]
-							}}
-						>
-							{children}
-						</animated.div>
-					)}
+						)}
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-);
+		</section>
+	);
 }

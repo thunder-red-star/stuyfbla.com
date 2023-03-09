@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Audrey Jing",
+    "roles": ["founder", "president", "financial math"],
+    "image": "/img/staff/audrey.png",
+    "bio": "No bio yet :(",
+    "gender": "female"
+  },
+  {
+    "name": "Cynthia Wen",
+    "roles": ["vice president"],
+    "image": "/img/staff/cynthia.png",
+    "bio": "No bio yet :(",
+    "gender": "female"
+  },
+  {
+    "name": "Jonathan Feng",
+    "roles": ["advisor"],
+    "image": "/img/staff/jonathan.png",
+    "bio": "No bio yet :(",
+    "gender": "male"
+  },
+  {
+    "name": "David Wang",
+    "roles": ["advisor"],
+    "image": "/img/staff/david.png",
+    "bio": "No bio yet :(",
+    "gender": "male"
+  },
+  {
+    "name": "Theresa Lau",
+    "roles": ["finance"],
+    "image": "/img/staff/theresa.png",
+    "bio": "No bio yet :(",
+    "gender": "female"
+  },
+  {
+    "name": "Kiran Yesley",
+    "roles": ["public relations", "graphic design"],
+    "image": "/img/staff/kiran.png",
+    "bio": "No bio yet :(",
+    "gender": "female"
+  },
+  {
+    "name": "William Vongphanith",
+    "roles": ["coding", "webmaster"],
+    "image": "/img/staff/william.png",
+    "bio": "Currently a senior at Stuyvesant High School, built the entire website from scratch.",
+    "gender": "male"
+  },
+  {
+    "name": "Annie Li",
+    "roles": ["public speaking"],
+    "image": "/img/staff/annie.png",
+    "bio": "No bio yet :(",
+    "gender": "female"
+  },
+  {
+    "name": "Solomon Binyaminov",
+    "roles": ["business presentation"],
+    "image": "/img/staff/solomon.png",
+    "bio": "No bio yet :(",
+    "gender": "male"
+  },
+  {
+    "name": "Sofia Kuptsova",
+    "roles": ["financial math"],
+    "image": "/img/staff/sofia.png",
+    "bio": "No bio yet :(",
+    "gender": "female"
+  },
+  {
+    "name": "Orlin Dyankov",
+    "roles": ["coding"],
+    "image": "/img/staff/orlin.png",
+    "bio": "No bio yet :(",
+    "gender": "male"
+  },
+  {
+    "name": "Eisei Kori",
+    "roles": ["secretary"],
+    "image": "/img/staff/eisei.png",
+    "bio": "No bio yet :(",
+    "gender": "male"
+  },
+  {
+    "name": "Mosammad Khanom",
+    "roles": ["staff"],
+    "image": "/img/staff/mosammad.png",
+    "bio": "No bio yet :(",
+    "gender": "male"
+  },
+  {
+    "name": "Timothy Louie",
+    "roles": ["staff"],
+    "image": "/img/staff/timothy.png",
+    "bio": "No bio yet :(",
+    "gender": "male"
+  },
+  {
+    "name": "Elizabeth Chen",
+    "roles": ["staff"],
+    "image": "/img/staff/elizabeth.png",
+    "bio": "No bio yet :(",
+    "gender": "female"
+  }
+]

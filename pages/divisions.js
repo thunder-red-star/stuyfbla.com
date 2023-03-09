@@ -1,14 +1,8 @@
 import styles from '../styles/Divisions.module.css'
 import Meta from "../components/Header/Meta";
-import ThemeSwitcher from "../components/Theme/ThemeSwitcher";
 import Navigation from "../components/Navigation/Navigation";
 import {Text} from "@nextui-org/react";
 import HighlightedText from "../components/Design/HighlightedText";
-import HeroLeft from "../components/Blocks/HeroLeft";
-import HeroRight from "../components/Blocks/HeroRight";
-import Image from "next/image";
-import FBLAHandshake from "../public/img/vector/fbla-handshake.svg";
-import FBLADesk from "../public/img/vector/fbla-desk.svg";
 import Box from "../components/Blocks/Box";
 import Hero from "../components/Blocks/Hero";
 

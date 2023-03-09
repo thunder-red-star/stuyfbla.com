@@ -1,0 +1,62 @@
+{
+  "founder": {
+    "displayName": "Founder",
+    "type": "success"
+  },
+  "president": {
+    "displayName": "President",
+    "type": "success"
+  },
+  "vice president": {
+    "displayName": "Vice President",
+    "type": "success"
+  },
+  "secretary": {
+    "displayName": "Secretary",
+    "type": "success"
+  },
+  "advisor": {
+    "displayName": "Advisor",
+    "type": "warning"
+  },
+  "staff": {
+    "displayName": "Staff",
+    "type": "secondary"
+  },
+  "finance": {
+    "displayName": "Finance",
+    "type": "danger"
+  },
+  "financial math": {
+    "displayName": "Business Math",
+    "type": "danger"
+  },
+  "business math": {
+    "displayName": "Business Math",
+    "type": "danger"
+  },
+  "business presentation": {
+    "displayName": "Business Presentation",
+    "type": "danger"
+  },
+  "public speaking": {
+    "displayName": "Public Speaking",
+    "type": "danger"
+  },
+  "coding": {
+    "displayName": "Coding",
+    "type": "danger"
+  },
+  "graphic design": {
+    "displayName": "Graphic Design",
+    "type": "danger"
+  },
+  "webmaster": {
+    "displayName": "Webmaster",
+    "type": "danger"
+  },
+  "public relations": {
+    "displayName": "Public Relations",
+    "type": "danger"
+  }
+}
