@@ -38,27 +38,27 @@ export default function Hero({children, className, ...props}) {
 			// eslint-disable-next-line react-hooks/rules-of-hooks
 			const [ref, inView] = useInView(
 				{
-					threshold: 0.5,
+					threshold: 0.01,
 					once: true,
 				}
 			);
 			// eslint-disable-next-line react-hooks/rules-of-hooks
-			return useSpring(fadeUp(inView, index));
+			return [useSpring(fadeUp(inView, index)), ref];
 		});
 
 
 	return (
 		<
 			section
-			className={(className || "") + styles.heroContainer + " w-full"}
+			className={className + " w-full"}
 		>
 			<div className={styles.hero + "relative"}>
 				<
 					div
-					className={styles.heroChildren}
+					className={"grid grid-cols-1 md:grid-cols-2 gap-4"}
 				>
-					<div>
-						{typeof children === Array && children.map((child, index) => {
+
+		{children.map((child, index) => {
 							return (
 								<
 									animated.div
@@ -72,18 +72,6 @@ export default function Hero({children, className, ...props}) {
 								</animated.div>
 							);
 						})}
-						{typeof children !== Array && (
-							<
-								animated.div
-								ref={springs[0][1]}
-								style={{
-									...springs[0][0]
-								}}
-							>
-								{children}
-							</animated.div>
-						)}
-					</div>
 				</div>
 			</div>
 		</section>

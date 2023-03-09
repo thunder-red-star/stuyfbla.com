@@ -1,0 +1,56 @@
+.base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/img/vector/grid.svg");
+    background-repeat: repeat;
+    background-size: 30px;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 1rem;
+}
+
+.displayName {
+    font-family: var(--font-display);
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--fbla-yellow);
+    margin: 0;
+}
+
+.description {
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--fbla-light-blue);
+    margin: 0;
+}
+
+.large {
+    font-size: calc(min(2.5rem, 8vw));
+    font-family: var(--font-display);
+}
+
+.sectionHeader {
+    font-size: calc(min(2rem, 7vw));
+    font-family: var(--font-display);
+}
+
+.largeDisplay {
+    font-size: calc(min(2.5rem, 10vw));
+    font-family: var(--font-display);
+}
+
+.text {
+    font-size: calc(min(1.5rem, 6vw));
+    font-family: var(--font-body);
+}
+
+.mini {
+    font-size: 1rem;
+    font-family: var(--font-body);
+    font-variant-caps: all-small-caps;
+}

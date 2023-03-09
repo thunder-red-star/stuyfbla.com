@@ -3,7 +3,7 @@ import Meta from "../components/Header/Meta";
 import Navigation from "../components/Navigation/Navigation";
 import {Text} from "@nextui-org/react";
 import HighlightedText from "../components/Design/HighlightedText";
-import TwoCol from "../components/Blocks/TwoCol";
+import Hero from "../components/Blocks/Hero";
 import MemberCard from "../components/Blocks/MemberCard";
 import Box from "../components/Blocks/Box";
 
@@ -18,29 +18,22 @@ export default function Home() {
 			<Meta title="Home"/>
 			<Navigation/>
 			<main className={"max-w-7xl mx-auto"}>
-				<HighlightedText className={"my-8"}>
+				<HighlightedText>
 					<Text
 						h1
 						className={styles.displayName}
 					>
-						Staff page
+						Contact us
 					</Text>
 				</HighlightedText>
-				<TwoCol>
-										{members.map((member, index) => {
-							// Create a member card for each member
-							return (
-								<MemberCard
-									name={member.name}
-									bio={member.bio}
-									roles={member.roles}
-									avatar={member.image}
-									gender={member.gender}
-									key={index}
-								/>
-							)
-						})}
-					</TwoCol>
+				<Hero>
+					<Text
+					p
+					className={"mt-2" + " " + styles.text}
+				>
+					Contact us at poop@gmail.com
+				</Text>
+				</Hero>
 			</main>
 		</div>
 	)

@@ -3,8 +3,8 @@ import Meta from "../components/Header/Meta";
 import Navigation from "../components/Navigation/Navigation";
 import {Text} from "@nextui-org/react";
 import HighlightedText from "../components/Design/HighlightedText";
+import TwoCol from "../components/Blocks/TwoCol";
 import Box from "../components/Blocks/Box";
-import Hero from "../components/Blocks/Hero";
 
 let emphasisGradient = {textGradient: "134deg, $emphasis 0%, $emphasisBright 100%"}
 
@@ -14,7 +14,7 @@ export default function Home() {
 			<Meta title="Home"/>
 			<Navigation/>
 			<main className={"max-w-7xl mx-auto"}>
-				<HighlightedText>
+				<HighlightedText className={"my-8"}>
 					<Text
 						h1
 						className={styles.displayName}
@@ -22,8 +22,7 @@ export default function Home() {
 						StuyFBLA Divisions
 					</Text>
 				</HighlightedText>
-				<Hero>
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+					<TwoCol className={"my-8"}>
 						<Box>
 							<Text h2 className={styles.sectionHeader}>Public Speaking</Text>
 							<Text
@@ -80,8 +79,7 @@ export default function Home() {
 								Chapter Officer Leadership Training.
 							</Text>
 						</Box>
-					</div>
-				</Hero>
+					</TwoCol>
 			</main>
 		</div>
 	)

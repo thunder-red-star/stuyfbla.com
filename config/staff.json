@@ -9,98 +9,99 @@
   {
     "name": "Cynthia Wen",
     "roles": ["vice president"],
-    "image": "/img/staff/cynthia.png",
+    "image": "/img/staff/female-default-avatar.png",
     "bio": "No bio yet :(",
     "gender": "female"
   },
   {
     "name": "Jonathan Feng",
     "roles": ["advisor"],
-    "image": "/img/staff/jonathan.png",
     "bio": "No bio yet :(",
-    "gender": "male"
+    "gender": "male",
+    "image": "/img/staff/male-default-avatar.png"
   },
   {
     "name": "David Wang",
     "roles": ["advisor"],
     "image": "/img/staff/david.png",
     "bio": "No bio yet :(",
-    "gender": "male"
+    "gender": "male",
+    "image": "/img/staff/male-default-avatar.png"
   },
   {
     "name": "Theresa Lau",
     "roles": ["finance"],
-    "image": "/img/staff/theresa.png",
+    "image": "/img/staff/female-default-avatar.png",
     "bio": "No bio yet :(",
     "gender": "female"
   },
   {
     "name": "Kiran Yesley",
     "roles": ["public relations", "graphic design"],
-    "image": "/img/staff/kiran.png",
+    "image": "/img/staff/female-default-avatar.png",
     "bio": "No bio yet :(",
     "gender": "female"
   },
   {
     "name": "William Vongphanith",
     "roles": ["coding", "webmaster"],
-    "image": "/img/staff/william.png",
+    "image": "/img/staff/male-default-avatar.png",
     "bio": "Currently a senior at Stuyvesant High School, built the entire website from scratch.",
     "gender": "male"
   },
   {
     "name": "Annie Li",
     "roles": ["public speaking"],
-    "image": "/img/staff/annie.png",
+    "image": "/img/staff/female-default-avatar.png",
     "bio": "No bio yet :(",
     "gender": "female"
   },
   {
     "name": "Solomon Binyaminov",
     "roles": ["business presentation"],
-    "image": "/img/staff/solomon.png",
+    "image": "/img/staff/male-default-avatar.png",
     "bio": "No bio yet :(",
     "gender": "male"
   },
   {
     "name": "Sofia Kuptsova",
     "roles": ["financial math"],
-    "image": "/img/staff/sofia.png",
+    "image": "/img/staff/female-default-avatar.png",
     "bio": "No bio yet :(",
     "gender": "female"
   },
   {
     "name": "Orlin Dyankov",
     "roles": ["coding"],
-    "image": "/img/staff/orlin.png",
+    "image": "/img/staff/male-default-avatar.png",
     "bio": "No bio yet :(",
     "gender": "male"
   },
   {
     "name": "Eisei Kori",
     "roles": ["secretary"],
-    "image": "/img/staff/eisei.png",
+    "image": "/img/staff/male-default-avatar.png",
     "bio": "No bio yet :(",
     "gender": "male"
   },
   {
     "name": "Mosammad Khanom",
     "roles": ["staff"],
-    "image": "/img/staff/mosammad.png",
+    "image": "/img/staff/male-default-avatar.png",
     "bio": "No bio yet :(",
     "gender": "male"
   },
   {
     "name": "Timothy Louie",
     "roles": ["staff"],
-    "image": "/img/staff/timothy.png",
+    "image": "/img/staff/male-default-avatar.png",
     "bio": "No bio yet :(",
     "gender": "male"
   },
   {
     "name": "Elizabeth Chen",
     "roles": ["staff"],
-    "image": "/img/staff/elizabeth.png",
+    "image": "/img/staff/female-default-avatar.png",
     "bio": "No bio yet :(",
     "gender": "female"
   }

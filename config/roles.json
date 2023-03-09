@@ -25,38 +25,38 @@
   },
   "finance": {
     "displayName": "Finance",
-    "type": "danger"
+    "type": "error"
   },
   "financial math": {
     "displayName": "Business Math",
-    "type": "danger"
+    "type": "error"
   },
   "business math": {
     "displayName": "Business Math",
-    "type": "danger"
+    "type": "error"
   },
   "business presentation": {
     "displayName": "Business Presentation",
-    "type": "danger"
+    "type": "error"
   },
   "public speaking": {
     "displayName": "Public Speaking",
-    "type": "danger"
+    "type": "error"
   },
   "coding": {
     "displayName": "Coding",
-    "type": "danger"
+    "type": "error"
   },
   "graphic design": {
     "displayName": "Graphic Design",
-    "type": "danger"
+    "type": "error"
   },
   "webmaster": {
     "displayName": "Webmaster",
-    "type": "danger"
+    "type": "error"
   },
   "public relations": {
     "displayName": "Public Relations",
-    "type": "danger"
+    "type": "error"
   }
 }
