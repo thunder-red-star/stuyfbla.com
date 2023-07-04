@@ -75,6 +75,14 @@ export default function Home() {
 						</Text>
 				</Hero>
 			</main>
+
+			<footer className={styles.footer + " text-center w-full mb-4"}>
+				<Link href={"https://hi.williamvongphanith.com"}>
+					<p className={styles.smallText + " " + styles.footer}>
+						Designed by William Vongphanith
+					</p>
+				</Link>
+			</footer>
 		</div>
 	)
 }

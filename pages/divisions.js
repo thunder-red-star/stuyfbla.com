@@ -5,6 +5,7 @@ import {Text} from "@nextui-org/react";
 import HighlightedText from "../components/Design/HighlightedText";
 import TwoCol from "../components/Blocks/TwoCol";
 import Box from "../components/Blocks/Box";
+import Link from "next/link";
 
 let emphasisGradient = {textGradient: "134deg, $emphasis 0%, $emphasisBright 100%"}
 
@@ -81,6 +82,14 @@ export default function Home() {
 						</Box>
 					</TwoCol>
 			</main>
+
+			<footer className={styles.footer + " text-center w-full mb-4"}>
+				<Link href={"https://hi.williamvongphanith.com"}>
+					<p className={styles.smallText + " " + styles.footer}>
+						Designed by William Vongphanith
+					</p>
+				</Link>
+			</footer>
 		</div>
 	)
 }

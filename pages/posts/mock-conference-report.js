@@ -67,6 +67,14 @@ export default function Home() {
 						The graphic design was the last event of the day. Participants were asked to design a brand for a nonprofit organization aimed to support youth development. They would then present their promotional items, including toys, t-shirts, and baseball caps. Kiran Yesley and Elizabeth Chen presented their winning brand focused on sports and athletic development in children. Their designs and catchy slogan, “Back to Balling,” definitely resonated with the judges.
 					</Text>
 			</main>
+
+			<footer className={styles.footer + " text-center w-full mb-4"}>
+				<Link href={"https://hi.williamvongphanith.com"}>
+					<p className={styles.smallText + " " + styles.footer}>
+						Designed by William Vongphanith
+					</p>
+				</Link>
+			</footer>
 		</div>
 	)
 }

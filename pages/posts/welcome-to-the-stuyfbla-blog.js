@@ -38,6 +38,14 @@ export default function Home() {
 						Surely there&apos;s a better way to do a blog but I&apos;m one person and I&apos;m not writing an entire content management system for free :(. So just create pages like this, its not that hard.
 					</Text>
 			</main>
+
+			<footer className={styles.footer + " text-center w-full mb-4"}>
+				<Link href={"https://hi.williamvongphanith.com"}>
+					<p className={styles.smallText + " " + styles.footer}>
+						Designed by William Vongphanith
+					</p>
+				</Link>
+			</footer>
 		</div>
 	)
 }

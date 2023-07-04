@@ -7,6 +7,7 @@ import Hero from "../components/Blocks/Hero";
 import MemberCard from "../components/Blocks/MemberCard";
 import Box from "../components/Blocks/Box";
 import ResourceSnippet from "../components/Blocks/ResourceSnippet";
+import Link from "next/link";
 
 let emphasisGradient = {textGradient: "134deg, $emphasis 0%, $emphasisBright 100%"}
 
@@ -36,6 +37,14 @@ export default function Home() {
 					/>
 				</Hero>
 			</main>
+
+			<footer className={styles.footer + " text-center w-full mb-4"}>
+				<Link href={"https://hi.williamvongphanith.com"}>
+					<p className={styles.smallText + " " + styles.footer}>
+						Designed by William Vongphanith
+					</p>
+				</Link>
+			</footer>
 		</div>
 	)
 }
