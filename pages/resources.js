@@ -6,6 +6,7 @@ import HighlightedText from "../components/Design/HighlightedText";
 import Hero from "../components/Blocks/Hero";
 import MemberCard from "../components/Blocks/MemberCard";
 import Box from "../components/Blocks/Box";
+import ResourceSnippet from "../components/Blocks/ResourceSnippet";
 
 let emphasisGradient = {textGradient: "134deg, $emphasis 0%, $emphasisBright 100%"}
 
@@ -26,13 +27,13 @@ export default function Home() {
 						Resources
 					</Text>
 				</HighlightedText>
-				<Hero>
-					<Text
-					p
-					className={"mt-2" + " " + styles.text}
-				>
-					Some resources filler text
-				</Text>
+				<Hero className={"mt-4 w-full"}>
+					<ResourceSnippet
+						title={"Interest Meeting Slides"}
+						href={"https://docs.google.com/presentation/d/16v8YGEuFtVSpbrR-8NVla97gW0yYglWj43scl1ALUwI/edit#slide=id.g206858f13f4_4_3"}
+						date={"September 1, 2022"}
+						author={"StuyFBLA"}
+					/>
 				</Hero>
 			</main>
 		</div>

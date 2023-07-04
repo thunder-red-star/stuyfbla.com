@@ -35,16 +35,16 @@ export default function Hero({children, className, ...props}) {
 		children = [children];
 	}
 	springs = children.map((child, index) => {
-			// eslint-disable-next-line react-hooks/rules-of-hooks
-			const [ref, inView] = useInView(
-				{
-					threshold: 0.5,
-					once: true,
-				}
-			);
-			// eslint-disable-next-line react-hooks/rules-of-hooks
-			return useSpring(fadeUp(inView, index));
-		});
+		// eslint-disable-next-line react-hooks/rules-of-hooks
+		const [ref, inView] = useInView(
+			{
+				threshold: 0.01,
+				once: true,
+			}
+		);
+		// eslint-disable-next-line react-hooks/rules-of-hooks
+		return [useSpring(fadeUp(inView, index)), ref];
+	});
 
 
 	return (
@@ -58,7 +58,7 @@ export default function Hero({children, className, ...props}) {
 					className={styles.heroChildren}
 				>
 					<div>
-						{typeof children === Array && children.map((child, index) => {
+						{children.map((child, index) => {
 							return (
 								<
 									animated.div
@@ -72,17 +72,6 @@ export default function Hero({children, className, ...props}) {
 								</animated.div>
 							);
 						})}
-						{typeof children !== Array && (
-							<
-								animated.div
-								ref={springs[0][1]}
-								style={{
-									...springs[0][0]
-								}}
-							>
-								{children}
-							</animated.div>
-						)}
 					</div>
 				</div>
 			</div>

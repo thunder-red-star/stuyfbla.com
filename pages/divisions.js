@@ -19,7 +19,7 @@ export default function Home() {
 						h1
 						className={styles.displayName}
 					>
-						StuyFBLA Divisions
+						Divisions
 					</Text>
 				</HighlightedText>
 					<TwoCol className={"my-8"}>

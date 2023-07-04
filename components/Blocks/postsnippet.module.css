@@ -1,0 +1,9 @@
+.smallText {
+    font-size: 1.25rem;
+    font-family: var(--font-body);
+}
+
+.largeDisplay {
+    font-size: calc(min(2.5rem, 10vw));
+    font-family: var(--font-display);
+}

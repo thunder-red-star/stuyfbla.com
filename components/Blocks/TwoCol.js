@@ -26,7 +26,7 @@ let fadeUp = (inView, index) => {
 // React UseEffect debugging to detect the type of children
 
 
-export default function Hero({children, className, ...props}) {
+export default function TwoCol({children, className, ...props}) {
 	// Create springs for each child, because each child will have a different delay
 	let springs;
 
@@ -35,16 +35,16 @@ export default function Hero({children, className, ...props}) {
 		children = [children];
 	}
 	springs = children.map((child, index) => {
-			// eslint-disable-next-line react-hooks/rules-of-hooks
-			const [ref, inView] = useInView(
-				{
-					threshold: 0.01,
-					once: true,
-				}
-			);
-			// eslint-disable-next-line react-hooks/rules-of-hooks
-			return [useSpring(fadeUp(inView, index)), ref];
-		});
+		// eslint-disable-next-line react-hooks/rules-of-hooks
+		const [ref, inView] = useInView(
+			{
+				threshold: 0.01,
+				once: true,
+			}
+		);
+		// eslint-disable-next-line react-hooks/rules-of-hooks
+		return [useSpring(fadeUp(inView, index)), ref];
+	});
 
 
 	return (
@@ -58,20 +58,20 @@ export default function Hero({children, className, ...props}) {
 					className={"grid grid-cols-1 md:grid-cols-2 gap-4"}
 				>
 
-		{children.map((child, index) => {
-							return (
-								<
-									animated.div
-									ref={springs[index][1]}
-									style={{
-										...springs[index][0]
-									}}
-									key={index}
-								>
-									{child}
-								</animated.div>
-							);
-						})}
+					{children.map((child, index) => {
+						return (
+							<
+								animated.div
+								ref={springs[index][1]}
+								style={{
+									...springs[index][0]
+								}}
+								key={index}
+							>
+								{child}
+							</animated.div>
+						);
+					})}
 				</div>
 			</div>
 		</section>

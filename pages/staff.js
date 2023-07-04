@@ -23,7 +23,7 @@ export default function Home() {
 						h1
 						className={styles.displayName}
 					>
-						Staff page
+						Staff
 					</Text>
 				</HighlightedText>
 				<TwoCol>

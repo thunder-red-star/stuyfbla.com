@@ -6,6 +6,7 @@ import HighlightedText from "../components/Design/HighlightedText";
 import Hero from "../components/Blocks/Hero";
 import MemberCard from "../components/Blocks/MemberCard";
 import Box from "../components/Blocks/Box";
+import PostSnippet from "../components/Blocks/PostSnippet";
 
 let emphasisGradient = {textGradient: "134deg, $emphasis 0%, $emphasisBright 100%"}
 
@@ -17,22 +18,30 @@ export default function Home() {
 		<div className={styles.base}>
 			<Meta title="Home"/>
 			<Navigation/>
-			<main className={"max-w-7xl mx-auto"}>
+			<main className={"max-w-7xl mx-auto mt-4"}>
 				<HighlightedText>
 					<Text
 						h1
-						className={styles.displayName}
+						className={styles.displayName + " w-full"}
 					>
 						StuyFBLA Blog
 					</Text>
 				</HighlightedText>
-				<Hero>
-					<Text
-					p
-					className={"mt-2" + " " + styles.text}
-				>
-					Some blog posts will go here.
-				</Text>
+				<Hero className={"mt-4 w-full"}>
+					<div className={"grid gap-8 grid-cols-1"}>
+						<PostSnippet
+							title={"Mock Conference Report"}
+							href={"/posts/mock-conference-report"}
+							date={"May 13th, 2023"}
+							author={"StuyFBLA"}
+						/>
+						<PostSnippet
+							title={"Welcome to the StuyFBLA Blog!"}
+							href={"/posts/welcome-to-the-stuyfbla-blog"}
+							date={"September 1, 2022"}
+							author={"StuyFBLA"}
+						/>
+					</div>
 				</Hero>
 			</main>
 		</div>
